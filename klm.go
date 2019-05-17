@@ -15,7 +15,7 @@ type KLM struct {
 func New(k string, logger *logrus.Logger) *KLM {
 	klm := KLM{
 		lg:  logger,
-		sh:  simplehttp.New("https://api.klm.com/opendata", logger),
+		sh:  simplehttp.New("https://api.airfranceklm.com/opendata", logger),
 		key: k,
 	}
 
